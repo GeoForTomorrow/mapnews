@@ -1,0 +1,32 @@
+html, body
+{ height: 100%; margin: 0; padding: 0; }
+.big
+{
+	display: table;
+	background-color: #ff9966;
+	border-radius: 8px;
+	width: 50%;
+	height: 25%;
+	/*padding-top: 3em;
+	padding-bottom: 3em;*/
+	margin:auto;
+	position: absolute;
+	left: 25%;
+	top: 25%;
+	z-index: 10;
+}
+p
+{
+	display: table-cell;
+	color: white;
+	font-family: "Avenir" sans-serif;
+	text-align: center;
+	vertical-align: text-middle;
+	font-size: 5em;
+	font-weight: 900;
+}
+.map
+{
+	height: 100%;
+	/*opacity: 0.4;*/
+}
