@@ -30,7 +30,7 @@ function initializeMap() {
     var centerLoc = tryParseLocFromURL(_centerLoc);
     currentMapLoc = centerLoc;
     var mapOptions = {
-        zoom: 10, //map zoom
+        zoom: 12, //map zoom
         center: centerLoc, //our location to center on, by default the bay
         mapTypeId: google.maps.MapTypeId.ROADMAP //The default 2d map
     };
@@ -44,19 +44,21 @@ function initializeMap() {
     }
     mapMain();
 }
+
 function addMarkers()
 {
     var marker=new google.maps.Marker({
         position: tryParseLocFromURL(currentMapLoc), //position, ANYWHERE
-        animation: google.maps.Animation.BOUNCE, //animation, only BOUNCE or DROP, i like bounce better
-        title: "NINJA!!!.", //marker TOOLTIP
-        icon: "marker.png" //marker icon
+        animation: google.maps.Animation.DROP, //animation, only BOUNCE or DROP, i like bounce better
+        title: "New affordable housing in the Tenderloin", //marker TOOLTIP
+        icon: "newsmarker.png" //marker icon
     });
     markers.push(marker);    //add the marker to the array
-    infoWindowText.push("NINJA!!!"); //add content for the infowindow
+    infoWindowText.push("New affordable housing in the Tenderloin"); //add content for the infowindow
     marker.setMap(map); //add the marker to the map
     
 }
+
 function showInfoWindows()
 {
     for (var i = 0; i < markers.length; ++i) {
@@ -73,14 +75,15 @@ function showInfoWindows()
         });
     }
 }
+
 function onMarkerClick(markerId)
 {
-    alert('you clicked a marker.');
+    alert('You clicked a marker.');
 }
+
 function mapMain()
 {
     //Main code
     addMarkers();
     showInfoWindows();
 }
-
