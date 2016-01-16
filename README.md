@@ -5,4 +5,4 @@ News on a map.
 
 Currently WIP.
 
-## View the live demo at [our github page!](http://geofortomorrow.github.io/mapnews/)
+## View the public live demo at [our github page!](http://geofortomorrow.github.io/mapnews/)
