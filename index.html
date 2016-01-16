@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="css/foundation.css" />
 	    	<link rel="stylesheet" href="css/app.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
+		<script type="text/javascript" src="main.js"></script>
 	</head>
 	
     <body class="homepage">
@@ -24,9 +25,9 @@
 			<div class="form-group spaceLeft">
 			  <input type="text" class="form-control" id="usr" placeholder="News topic">
 			</div>
-			<button class="btn btn-primary" href="tutorial.html">Tutorial</button>
-			<button class="btn btn-info"  href="i.html">Information</button>
-			<p>Developed by Geography for Tomorrow Inc.</p>
+			<button class="btn btn-primary" onclick="location.href='tutorial.html'">Tutorial</button>
+			<button class="btn btn-info"  onclick="location.href='i.html'">Information</button>
+			<p>Developed by <a href="http://geofortomorrow.org" target="_blank">Geography for Tomorrow Inc.</a> in collaboration with <a href="https://github.com/0xFireball" target="_blank">0xFireball</a></p>
 		
 	</div>
 		<div class="map" id="map"></div>
@@ -49,7 +50,6 @@
 		
 		
 	<!--Some Framework Scripts-->
-	<script type="text/javascript" src="main.js"></script>
 	<script src="js/vendor/jquery.min.js"></script>
     	<script src="js/vendor/what-input.min.js"></script>
     	<script src="js/foundation.min.js"></script>
