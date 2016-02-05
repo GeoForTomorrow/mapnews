@@ -1,0 +1,3 @@
+<?php
+echo JSON_ERROR_UNSUPPORTED_TYPE;
+?>
