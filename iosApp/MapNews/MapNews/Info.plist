@@ -62,5 +62,11 @@
 		<string>Icon-Small-50@2x</string>
 		<string>Images.xcassets/AppIcons.appiconset/Icon-40@2x</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+<dict>
+    <key>NSAllowsArbitraryLoads</key>
+    <true/>
+</dict>
+
 </dict>
 </plist>

@@ -31,7 +31,7 @@ namespace MapNews
 			// Load the rendered HTML into the view with a base URL 
 			// that points to the root of the bundled Resources folder
 			WebView.LoadHtmlString (page, NSBundle.MainBundle.BundleUrl);
-
+			WebView.ScalesPageToFit = true;
 
 			//Load GFTPage if possible
 			var gftServer = "http://geofortomorrow.github.io/mapnews/";
