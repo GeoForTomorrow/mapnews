@@ -1,12 +1,12 @@
 <?php
-$apikey = "2114c2cb601b0c59901797bf147a4f82:0:73729815";
+include('config.php');
 include('./httpful.phar');
 include('newsparser.php');
 header('Content-Type: text/html; charset=utf-8');
 ?>
 
-<!DOCTYPE HTML>
 
+<!DOCTYPE HTML>
 <html>
    <head>
       <title>GFT News</title>
@@ -20,6 +20,13 @@ header('Content-Type: text/html; charset=utf-8');
    </head>
 
 	<body>
+		<script src=js/modernizr.js></script>
+		<script>
+		Modernizr.load({
+		    test: Modernizr.touch,
+		    yep : 'appMobile.css',
+		});
+		</script>
 		<div id="news">
 			<?php
 				$placeholder = "<script>document.getElementById('news').innerHTML='Fetching News...';</script>";
