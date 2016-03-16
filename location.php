@@ -12,7 +12,7 @@ echo $lng;
 function getLatLngJson($geoKeyword)
 {
     $geoKeyword = urlencode($geoKeyword);
-    $uP = "address=".$geoKeyword."&key="+$geoapikey;
+    $uP = "address=".$geoKeyword."&key=$geoapikey";
     $wbr = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?".$uP);
     return $wbr;
 }
