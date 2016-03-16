@@ -37,6 +37,7 @@ header('Content-Type: text/html; charset=utf-8');
 				$responsejson = null;
 				$cacheExpired = is_null(checkCache($newsCacheName));
 				$noCache = !is_null($_GET["nocache"]);
+				
 
 				////////////////////////
 
@@ -46,11 +47,11 @@ header('Content-Type: text/html; charset=utf-8');
 					$rawresponsejson = \Httpful\Request::get($uri)->send();
 					$responsejson = $rawresponsejson.raw_body;
 					setCacheVal($newsCacheName, $responsejson);
-					echo "Fetched.";
+					if ($debug) echo("Fetched.");
 				}
 				else
 				{
-					echo "From cache.";
+					if ($debug) echo("From cache.");
 					$responsejson = getCacheVal($newsCacheName);
 				}
 				echo printArticleObjects(parseArticleObjectsFromJson($responsejson));
