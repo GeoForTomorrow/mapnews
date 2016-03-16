@@ -1,4 +1,5 @@
 <?php
+include_once("config.php");
 /************* DEMO ********************
 header("Content-Type: text/plain");
 error_reporting(-1);
@@ -11,7 +12,7 @@ echo $lng;
 function getLatLngJson($geoKeyword)
 {
     $geoKeyword = urlencode($geoKeyword);
-    $uP = "address=".$geoKeyword."&key=AIzaSyBGGHhcb9WFb55q77UWaAvGxbWJOLvetiQ";
+    $uP = "address=".$geoKeyword."&key="+$geoapikey;
     $wbr = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?".$uP);
     return $wbr;
 }

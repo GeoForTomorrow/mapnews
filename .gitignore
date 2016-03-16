@@ -1,4 +1,6 @@
 *.userprefs
+cache/
+config.php
 bin
 obj
 .vscode

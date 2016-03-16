@@ -1,7 +1,8 @@
 <?php
-include('config.php');
-include('./httpful.phar');
-include('newsparser.php');
+include_once('config.php');
+include_once('caching.php');
+include_once('./httpful.phar');
+include_once('newsparser.php');
 header('Content-Type: text/html; charset=utf-8');
 ?>
 
@@ -29,10 +30,11 @@ header('Content-Type: text/html; charset=utf-8');
 		</script>
 		<div id="news">
 			<?php
-				$uri = "http://api.nytimes.com/svc/news/v3/content/all/all.json?api-key=$apikey";
+
+				$uri = "http://api.nytimes.com/svc/news/v3/content/all/all.json?api-key=$newsapikey";
 				$rawresponsejson = \Httpful\Request::get($uri)->send();
 				$responsejson = $rawresponsejson.raw_body;
-				echo parseNews($responsejson);
+				echo printArticleObjects(parseArticleObjectsFromJson($responsejson));
 			?>
 		</div>
 
