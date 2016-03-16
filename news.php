@@ -29,13 +29,9 @@ header('Content-Type: text/html; charset=utf-8');
 		</script>
 		<div id="news">
 			<?php
-				$placeholder = "<script>document.getElementById('news').innerHTML='Fetching News...';</script>";
-				echo $placeholder;
 				$uri = "http://api.nytimes.com/svc/news/v3/content/all/all.json?api-key=$apikey";
 				$rawresponsejson = \Httpful\Request::get($uri)->send();
 				$responsejson = $rawresponsejson.raw_body;
-
-
 				echo parseNews($responsejson);
 			?>
 		</div>
