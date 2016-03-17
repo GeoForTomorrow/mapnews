@@ -21,7 +21,7 @@ for ($i=0;$i<=$resultsnum;$i++)
     {
         $locationStr = $geoFacet[0]; //Assign to first location tag
         //Get coords from GMaps
-        $latlng = parseLatLngStrJsonForCoordinates(getLatLngJson("San Jose"));
+        $latlng = parseLatLngStrJsonForCoordinates(getLatLngJson($locationStr));
         $lat = $latlng['lat'];
         $lng = $latlng['lng'];
     }

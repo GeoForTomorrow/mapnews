@@ -30,7 +30,7 @@ function initializeMap() {
     var centerLoc = tryParseLocFromURL(_centerLoc);
     currentMapLoc = centerLoc;
     var mapOptions = {
-        zoom: 8, //map zoom
+        zoom: 4, //map zoom
         center: centerLoc, //our location to center on, by default the bay
         mapTypeId: google.maps.MapTypeId.ROADMAP //The default 2d map
     };
