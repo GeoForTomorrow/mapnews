@@ -10,7 +10,8 @@
 		<link rel="stylesheet" href="css/foundation.css" />
 	    	<link rel="stylesheet" href="css/appMobile.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
-		<script type="text/javascript" src="main.js"></script>
+		<!--<script type="text/javascript" src="main.js"></script>-->
+		<script type="text/javascript" src="newsdisplay.php"></script>
 	</head>
 
     <body class="homepage">
@@ -52,9 +53,9 @@
 
 	<!--Some Framework Scripts-->
 	<script src="js/vendor/jquery.min.js"></script>
-    	<script src="js/vendor/what-input.min.js"></script>
-    	<script src="js/foundation.min.js"></script>
-    	<script src="js/app.js"></script>
+	<script src="js/vendor/what-input.min.js"></script>
+	<script src="js/foundation.min.js"></script>
+	<script src="js/app.js"></script>
     <script>
     	function closeHoverPanel()
     	{

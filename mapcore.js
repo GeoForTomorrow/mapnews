@@ -45,20 +45,6 @@ function initializeMap() {
     mapMain();
 }
 
-function addMarkers()
-{
-    var marker=new google.maps.Marker({
-        position: tryParseLocFromURL(currentMapLoc), //position, ANYWHERE
-        animation: google.maps.Animation.DROP, //animation, only BOUNCE or DROP, i like bounce better
-        title: "New affordable housing in the Tenderloin", //marker TOOLTIP
-        icon: "newsmarker.png" //marker icon
-    });
-    markers.push(marker);    //add the marker to the array
-    infoWindowText.push("New affordable housing in the Tenderloin"); //add content for the infowindow
-    marker.setMap(map); //add the marker to the map
-    
-}
-
 function showInfoWindows()
 {
     for (var i = 0; i < markers.length; ++i) {
@@ -66,9 +52,9 @@ function showInfoWindows()
         var infowindow = new google.maps.InfoWindow({
             content: infoWindowText[i]
         });
-        
+
         infowindow.open(map,markers[i]);
-        
+
         //add click event handlers
         google.maps.event.addListener(markers[i],'click',function() {
             onMarkerClick(i);
@@ -87,3 +73,4 @@ function mapMain()
     addMarkers();
     showInfoWindows();
 }
+

@@ -37,7 +37,9 @@ function printArticleObjects($results)
       echo ("<a target=\"blank\" href=\"".$results[$i]['url'])."\">Read Original Article</a><br><br>";
    }
    return "";
+   /*
    $responseBox = "<script>document.getElementById('news').innerHTML='$results';</script>";
    return $responseBox;
+   */
 }
 ?>
