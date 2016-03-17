@@ -37,7 +37,6 @@ header('Content-Type: text/html; charset=utf-8');
 				$responsejson = null;
 				$cacheExpired = is_null(checkCache($newsCacheName));
 				$noCache = !is_null($_GET["nocache"]);
-				
 
 				////////////////////////
 
