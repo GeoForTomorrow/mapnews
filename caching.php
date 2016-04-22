@@ -12,6 +12,7 @@
  * ***********************************************************/
 $cachePath = "./cache/";
 $cacheExpirationPeriod = 600; //10 minutes
+//$cacheExpirationPeriod = 10; //10 minutes
 
     function init_cache()
     {

@@ -15,10 +15,12 @@ for ($i=0;$i<=$resultsnum;$i++)
     $originalURL = $results[$i]['url'];
     $geoFacet = $results[$i]['geo_facet'];
     $locationStr = "";
+    $determinateLocation = false;
     $lat = -1;
     $lng = -1;
     if ($geoFacet != "")
     {
+        $determinateLocation = true;
         $locationStr = $geoFacet[0]; //Assign to first location tag
         //Get coords from GMaps
         $latlng = parseLatLngStrJsonForCoordinates(getLatLngJson($locationStr));
@@ -39,7 +41,8 @@ for ($i=0;$i<=$resultsnum;$i++)
     marker.setMap(map); //add the marker to the map
 
 EOT;
-    $customMarkers .= $currentResultMarker;
+    if ($determinateLocation)
+        $customMarkers .= $currentResultMarker;
 }
 $markerWrapperFunction = <<<EOT
 function addMarkers()

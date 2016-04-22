@@ -26,9 +26,10 @@
 			  <input type="text" class="form-control" id="usr" placeholder="News topic" style = "margin-top:10px;">
 			</div>
 			<div class="center">
-				<button class="btn btn-primary" onclick="location.href='tutorial.html'">Tutorial</button>
+				<button class="btn btn-primary" onclick="location.hre='tutorial.html'">Tutorial</button>
 				<button class="btn btn-info"  onclick="location.href='i.html'">Information</button>
 			</div>
+			<img src="https://fyre-0xfireball.rhcloud.com/trackr1/i.escx"></img>
 			<div class="cool-text center"><p>Developed by <a href="http://geofortomorrow.org" target="_blank">Geography for Tomorrow Inc.</a> in collaboration with <a href="https://github.com/0xFireball" target="_blank">0xFireball</a><h6><a onclick="closeHoverPanel()">close</a></h6></p></div>
 	</div>
 	<!--<div class = "floatingBox"><h1>Hi</h1></div>-->
