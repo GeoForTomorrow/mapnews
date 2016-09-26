@@ -1,3 +1,12 @@
+<!--
+
+	NewsView/MapNews
+	Developed by:
+		Geography For Tomorrow, Inc (http://geofortomorrow.org),
+		0xFireball (https://0xfireball.me)
+
+-->
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -29,8 +38,7 @@
 				<button class="btn btn-primary" onclick="location.hre='tutorial.html'">Tutorial</button>
 				<button class="btn btn-info"  onclick="location.href='i.html'">Information</button>
 			</div>
-			<img src="https://fyre-0xfireball.rhcloud.com/trackr1/i.escx"></img>
-			<div class="cool-text center"><p>Developed by <a href="http://geofortomorrow.org" target="_blank">Geography for Tomorrow Inc.</a> in collaboration with <a href="https://github.com/0xFireball" target="_blank">0xFireball</a><h6><a onclick="closeHoverPanel()">close</a></h6></p></div>
+			<div class="cool-text center"><p>Developed by <a href="http://geofortomorrow.org" target="_blank">Geography for Tomorrow Inc.</a> in collaboration with <a href="https://0xfireball.me" target="_blank">0xFireball</a><h6><a onclick="closeHoverPanel()">close</a></h6></p></div>
 	</div>
 	<!--<div class = "floatingBox"><h1>Hi</h1></div>-->
 		<div class="map" id="map"></div>
@@ -50,7 +58,6 @@
 
 
 	<!--Modal Dialogs-->
-
 
 	<!--Some Framework Scripts-->
 	<script src="js/vendor/jquery.min.js"></script>

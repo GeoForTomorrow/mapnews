@@ -1,3 +1,12 @@
+<!--
+
+	NewsView/MapNews
+	Developed by:
+		Geography For Tomorrow, Inc (http://geofortomorrow.org),
+		0xFireball (https://0xfireball.me)
+
+-->
+
 <?php
 include_once("config.php");
 /************* DEMO ********************
