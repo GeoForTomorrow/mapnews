@@ -1,5 +1,4 @@
-.header {
-	height:5em;
+.headerNews {
 	display: flex;
 	display: -webkit-box;
 	display: -moz-box;
@@ -8,16 +7,37 @@
 	align-items: center;
 	margin:auto;
 	justify-content: center;
+    background-color: #009dcd;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
-div.header h1 {
-	font-weight: 700;
-	margin-top:5px;
+div.headerNews h1 {
+	font-weight: bold;
+	font-size: 30px;
+    font-family: "Avenir" sans-serif;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 5px;
 }
 
-.spaceSides {
-	margin-left: 1.5em;
-	margin-top:24px;
+.spaceAbove {
+    margin-top: 0.6%;
+}
+.spaceLeft {
+	margin-left: 2%;
+	/*margin-top:24px;*/
+}
+
+.moreSpaceLeft {
+	margin-left: 3%;
+}
+.lessSpaceLeft {
+    margin-left: 1.3%;
+}
+.lessMoreSpaceLeft {
+    margin-left: 2.3%;
 }
 
 div.header button {
@@ -26,17 +46,267 @@ div.header button {
 
 div.header p {
 	margin-left:1.5em;
-	margin-top:5px;
+	/*margin-top:5px;*/
 }
 
 .map {
 	position:relative;
-	height:90%;
+	height:100%;
 }
-
 .container1 {
 	height: 100%;
-	background-color:red;
 	width: 100%;
+    display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+    flex-direction: column;
+}
+input.short {
+    width: 15%;
+    border-radius: 8px;
+    border-color: #009dcd;
+    background-color: #006281;
+    color: white;
+    padding-left: 1%;
+    font-family: "Avenir" sans-serif;
 }
 
+input.short:focus {
+    background-color: #006281;
+    color: white;
+    outline: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-color: #009dcd;
+}
+::-webkit-input-placeholder {
+    color: white;
+}
+input.short:focus::-webkit-input-placeholder { color:transparent; }
+
+.buttonBlue {
+	background: #00b1e6;
+}
+	.buttonBlue:active {
+		background: #009dcd;
+	}
+	.buttonBlue:hover {
+		background: #009dcd;
+	}
+.buttonRed {
+	background: #ce0000;
+}
+	.buttonRed:active {
+		background: #e70000;
+	}
+	.buttonRed:hover {
+		background: #e70000;
+	}
+.buttonGreen {
+	background: #32cd32;
+}
+	.buttonGreen:active {
+		background: #47d247;
+	}
+	.buttonGreen:hover {
+		background: #47d247;
+	}
+.button {
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    /*font-size: .9em;*/
+    font-weight: 900;
+    height: 3.125em;
+    letter-spacing: 0.125em;
+    line-height: 3.125em;
+    padding: 0 1.75em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	}
+	@media screen and (max-width: 736px) {
+		.button {
+			font-size: 1em;
+		}
+	}
+
+.headerNews2 {
+    display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	align-items: center;
+	justify-content: center;
+    background-color: #009dcd;
+    width: 70%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    flex-direction: column;
+	position: absolute;
+	left: 15%;
+	top: 18%;
+	z-index: 10;
+    opacity: 0.9;
+}
+div.headerNews2 h1 {
+	font-weight: bold;
+	font-size: 30px;
+    font-family: "Avenir" sans-serif;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 5px;
+}
+.buttonsSameRow {
+    display: flex;
+    display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+    align-items: center;
+}
+.menu {
+    padding-left: 1%;
+    padding-right: 1%;
+    background: #009dcd;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font: 20px "Avenir" sans-serif;
+    position: absolute;
+    right: 6%;
+    top: 3%;
+    z-index: 100;
+}
+
+.popUp {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    width: 70%;
+    height: 80%;
+    background-color: #e8faff;
+    opacity: 0.9;
+    left: 15%;
+    bottom: -80%;
+    margin-top: 15%;
+    color: #009dcd;
+    font-family: "Avenir" sans-serif;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    overflow-y: auto;
+}
+
+.popUp2 {
+    display: none;
+    background-color: #e8faff;
+    width: 80%;
+    height: 80%;
+    padding-top: 3%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 3%;
+	position: absolute;
+	left: 10%;
+	top: 10%;
+	z-index: 101;
+    opacity: 1;
+    color: #009dcd;
+    border-radius: 8px;
+    overflow-y: auto;
+}
+
+.popUp h2, .popUp2 h2 {
+    text-align: center;
+    color: #009dcd;
+    font-family: "Avenir" sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.popUp h3, .popUp2 h3 {
+    text-align: center;
+    color: #009dcd;
+    font-family: "Avenir" sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.popUp p.firstP{
+    margin-top: 2.5%;
+}
+
+.popUp2 p.firstP {
+    margin-top: 4%;
+}
+
+@media screen and (max-width: 1300px) {
+    .spaceAbove {
+        margin-top: 0.9%;
+    }
+}
+@media screen and (max-width: 980px) {
+    .container1 {
+        display: block;
+        position: absolute
+    }
+    .headerNews {
+        display: none;
+    }
+    .headerNews2 {
+        display: flex;
+    }
+    input.short {
+        width: 60%;
+        text-align: center;
+    }
+    ::-webkit-input-placeholder {
+        text-align: center;
+    }
+    .spaceAbove {
+        margin-top: 1.5%;
+    }
+    .lessSpaceAbove {
+        margin-top: 0.6%;
+    }
+    .button {
+        font-size: 15px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 736px) {
+    input.short {
+        width: 80%;
+    }
+    .headerNews2 {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .menu {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
+@media screen and (min-width: 980px) {
+    .headerNews2 {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+}
